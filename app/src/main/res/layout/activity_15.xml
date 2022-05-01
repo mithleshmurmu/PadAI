@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity15">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deep Learning"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduction"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/text7"
+        />
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="6M5VXKLf4D4"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="true"
+        android:layout_below="@+id/text8"
+
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="7sB052Pz0sQ"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/video7"
+
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="DooxDIRAkPA"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/video8"
+
+        />
+
+</RelativeLayout>
