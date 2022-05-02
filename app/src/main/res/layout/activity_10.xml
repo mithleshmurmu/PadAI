@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity10">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/text10_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLASS 10"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text10_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physics"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/text10_1"
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video10_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="9QvQK_aKyl0"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="true"
+        android:layout_below="@+id/text10_2"
+
+        />
+
+    <TextView
+        android:id="@+id/text10_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chemistry"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/video10_1"
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video10_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="v7oAc3bu1RI"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/text10_3"
+
+        />
+
+    <TextView
+        android:id="@+id/text10_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathematics"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/video10_2"
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video10_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="-tb6KrlXEJ0"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/text10_4"
+
+        />
+
+</RelativeLayout>

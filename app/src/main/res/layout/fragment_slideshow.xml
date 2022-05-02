@@ -21,4 +21,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app is made by Mithlesh Kumar Murmu (CS21M010) and N. Sai Pragna (CS21M012) as a part of ISE project. This app provides the lecture videos and also videos on Artificial Intelligence, Data Science, Machine Learning and Deep Learning"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        />
+
 </RelativeLayout>
